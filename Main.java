@@ -15,7 +15,7 @@ public class Main {
 
         System.out.println("Сумма кредита: " + sum + " ₽");
         System.out.println("Процентная ставка: " + percent + "%");
-        if (year_one<= 1) {
+        if (year_one <= 1) {
             System.out.println("Срок кредита: " + year_one + " год");
         } else {
             System.out.println("Срок кредита: " + year_one + " года");
@@ -48,8 +48,6 @@ public class Main {
             System.out.println("Срок кредита: " + year_three + " года");
         }
         System.out.println("Ежемесячный платеж: " + (int) index_three + " ₽");
-
-
 
 
     }
