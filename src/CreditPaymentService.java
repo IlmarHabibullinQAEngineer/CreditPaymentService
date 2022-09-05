@@ -1,14 +1,14 @@
 public class CreditPaymentService {
-    public int calculate(int a, double b, int c) {
+    public int calculate(int sum, double percent, int year) {
 
         //double index = service.calculate(sum, percent, year)
 
         //Процент в месяц.
-        double month = b / 12;
+        double month = percent / 12;
         double inmonth = month / 100;
 
         //Количество месяцев.
-        int months = c * 12;
+        int months = year * 12;
 
         //Основной рассчет.
 
@@ -23,7 +23,7 @@ public class CreditPaymentService {
         //Итоговый рассчет.
         double preresult = upstepens / instepen;
 
-        double result = preresult * a;
+        double result = preresult * sum;
         return (int) result;
 
     }
